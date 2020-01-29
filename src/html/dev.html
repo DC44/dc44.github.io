@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Dev App/title>
+    <title>Dev Test App</title>
 
     <!-- webpack bundled css -->
     <link rel="stylesheet" href="css/patternfly.min.css">
@@ -29,7 +29,7 @@
               pendo.initialize({
                   visitor: {
                       id:              'ID-Dev',   // Required if user is logged in
-                      email:        'george.palfreyman@pendo.io'// Recommended if using Pendo Feedback, or NPS Email
+                      // email:        'george.palfreyman@pendo.io'// Recommended if using Pendo Feedback, or NPS Email
                       // full_name:    // Recommended if using Pendo Feedback
                       // role:         // Optional
       
@@ -38,8 +38,9 @@
                   },
       
                   account: {
-                      id:           'Account-Dev' // Highly recommended
-                      // name:         // Optional
+                      id:           'Account-Dev', // Highly recommended
+                      name: 'Account-Dev-Name'
+                      // name:   '<img src=X onerror=alert(8)>'      // Optional
                       // is_paying:    // Recommended if using Pendo Feedback
                       // monthly_value:// Recommended if using Pendo Feedback
                       // planLevel:    // Optional
