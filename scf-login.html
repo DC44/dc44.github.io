@@ -19,36 +19,17 @@
           (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
           v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
               o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
-              y=e.createElement(n);y.async=!0;y.src='https://pendo-dev-static.storage.googleapis.com/agent/static/'+apiKey+'/pendo.js';
+              y=e.createElement(n);y.async=!0;y.src='https://pendo-apollo-static.storage.googleapis.com/agent/static/'+apiKey+'/pendo.js';
               z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
       
               // Call this whenever information about your visitors becomes available
               // Please use Strings, Numbers, or Bools for value types.
               pendo.initialize({
-                  visitor: {
-                      id:              'ID-SCF',   // Required if user is logged in
-                      email:        'george.palfreyman@pendo.io',// Recommended if using Pendo Feedback, or NPS Email
-                      full_name:    'George Palfreyman'// Recommended if using Pendo Feedback
-                      // role:         // Optional
-      
-                      // You can add any additional visitor level key-values here,
-                      // as long as it's not one of the above reserved names.
-                  },
-      
-                  account: {
-                      id:           'Account-SCF', // Highly recommended
-                      // name:         // Optional
-                      is_paying:   true, // Recommended if using Pendo Feedback
-                      monthly_value: 5000// Recommended if using Pendo Feedback
-                      // planLevel:    // Optional
-                      // planPrice:    // Optional
-                      // creationDate: // Optional
-      
-                      // You can add any additional account level key-values here,
-                      // as long as it's not one of the above reserved names.
-                  }
+                jwt:
+                'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aXNpdG9yIjp7ImlkIjoiSUQtU0NGIiwiZW1haWwiOiJnZW9yZ2UucGFsZnJleW1hbkBwZW5kby5pbyIsImZ1bGxfbmFtZSI6Ikdlb3JnZSBQYWxmcmV5bWFuIn0sImFjY291bnQiOnsiaWQiOiJBY2NvdW50LVNDRiIsIm5hbWUiOiJTQ0ZBY2NvdW50IE5hbWUiLCJpc19wYXlpbmciOnRydWUsIm1vbnRobHlfdmFsdWUiOjUwMDB9LCJub25jZSI6MTAxMDIwNDkzMH0.CCAPTO2aVfNwmlYipUkGGTfTA8t7M6tYquDSvLbkkcM',
+                signingKeyName: 'spor-geor-1aA1o'
               });
-      })('89c57975-5b46-4ed2-4c24-e4a36cbfb1dd');
+      })('d93722d4-2639-4bbf-67db-6a9df4356061');
       </script>
       
     <span id="badge">
